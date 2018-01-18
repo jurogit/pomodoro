@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-color: #29221f;
+	color: #fff;
+}
+
+.main-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.time-config {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.pomodoro-time-ui, .break-time-ui {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px 15px 15px;
+}
+
+.pomodoro-time-label, .break-time-label {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pomodoro-time-ui-items, .break-time-ui-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pomodoro-time-ui-items>h3, .break-time-ui-items>h3 {
+	font-size: 3rem;
+	font-weight: 300;
+	border: 1px solid #fff;
+  border-radius: 1.5rem;
+  margin: 15px;
+  width: 6rem;
+  text-align: center;
+}
+
+.pomodoro-time-ui-items .fa, .break-time-ui-items .fa {
+	font-size: 14px;
+}
+
+.circle-btn {
+	background-color: transparent;
+	color: #fff;
+	width: 1.8rem;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	border: 1px solid #fff;
+	border-radius: 0.9rem;
+	cursor: pointer;
+}
+
+.circle-btn:focus, .circle-btn:hover {
+  color: orange;
+  border-color: orange;
+}
+
+.timer-display {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.timer {
+	font-size: 5rem;
+	font-weight: 200;
+	border: 1px solid #fff;
+  border-radius: 1.5rem;
+  margin: 15px;
+  width: 15rem;
+  text-align: center;
+}
+
+.timer-controls {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 15px;
+	margin-top: 15px;
+}
+
+.timer-controls>.fa {
+	cursor: pointer;
+	margin: 0 15px;
+	transition: all 0.1s ease-in;
+	line-height: 1.2rem;
+}
+
+.timer-controls>.fa.fa-refresh {
+	font-size: 1.8rem;
+}
+
+.timer-controls>.fa:focus, .timer-controls>.fa:hover {
+	color: orange;
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .time-config {
+		flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .pomodoro-time-ui, .break-time-ui {
+    padding: 15px 15px 0;
+  }
+}
